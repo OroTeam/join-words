@@ -1,6 +1,6 @@
 {
   "name": "join-words",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a lightweight and easy-to-use JavaScript utility for formatting an array of words into a human-readable string.",
   "keywords": [
     "words",
