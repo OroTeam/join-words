@@ -1,0 +1,25 @@
+{
+  "name": "join-words",
+  "version": "1.0.0",
+  "description": "a lightweight and easy-to-use JavaScript utility for formatting an array of words into a human-readable string.",
+  "keywords": [
+    "words",
+    "language",
+    "join"
+  ],
+  "homepage": "https://github.com/OroTeam/join-words#readme",
+  "bugs": {
+    "url": "https://github.com/OroTeam/join-words/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OroTeam/join-words.git"
+  },
+  "license": "MIT",
+  "author": "OroTeam",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
