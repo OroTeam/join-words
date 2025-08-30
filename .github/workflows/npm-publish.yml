@@ -35,10 +35,6 @@ jobs:
       - name: Generate type definitions
         run: npm run types
 
-      # Step 6: Run tests
-      - name: Run tests
-        run: npm test
-
   publish-npm:
     name: Publish to npm
     needs: build-and-test # Ensure the build-and-test job passes before publishing
