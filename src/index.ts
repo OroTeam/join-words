@@ -10,7 +10,7 @@
  * @param {string} comma - The comma in the text
  * @returns {string} - Properly formatted string.
  */
-function joinWords(words, and = "and", comma =", ") {
+export default function joinWords(words: string[], and: string = "and", comma: string = ", "): string {
   if (words.length === 0) return "";
   if (words.length === 1) return words[0];
   if (words.length === 2) return `${words[0]} ${and} ${words[1]}`;
@@ -20,5 +20,3 @@ function joinWords(words, and = "and", comma =", ") {
   const lastWord = words[words.length - 1];
   return `${allButLast}${comma}${and} ${lastWord}`;
 }
-
-module.exports = joinWords;

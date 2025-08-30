@@ -1,6 +1,6 @@
 {
   "name": "join-words",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a lightweight and easy-to-use JavaScript utility for formatting an array of words into a human-readable string.",
   "keywords": [
     "words",
@@ -17,9 +17,24 @@
   },
   "license": "MIT",
   "author": "OroTeam",
-  "type": "commonjs",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "types": "tsc"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.28.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "rollup": "^4.49.0",
+    "typescript": "^5.9.2"
+  },
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@rollup/plugin-typescript": "^12.1.4",
+    "tslib": "^2.8.1"
   }
 }
